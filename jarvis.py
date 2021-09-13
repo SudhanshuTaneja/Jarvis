@@ -16,11 +16,11 @@ def speak(audio):
 def wishme():
     hour=int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
-        speak("Good Morning Mr. vasu!")
+        speak("Good Morning Mr. Sudhanshu!")
     elif hour>=12 and hour<18:
-        speak("Good afternoon Mr. vasu!")
+        speak("Good afternoon Mr. Sudhanshu!")
     else:
-        speak("Good evening Mr. vasu!")
+        speak("Good evening Mr. Sudhanshu!")
     speak("I am jarvis sir please tell me what can i do for you")
 def tc():
     r=sr.Recognizer()
@@ -77,7 +77,7 @@ if __name__ == "__main__":
             try:
                 speak("what should i say?")
                 content=tc()
-                to= "gracygupta96@gmail.com"
+                to= "sudhanshutaneja001@gmail.com"
                 sendEmail(to, content)
                 speak("email has been send sir")
             except Exception as e:
@@ -86,7 +86,3 @@ if __name__ == "__main__":
         elif 'quit' or 'bye' in query:
             speak("bye bye sir it was nice to serve u")
             break
-
-
-
-    
